@@ -1,0 +1,33 @@
+.details_container {
+  background: rgba(0, 0, 0, 0.8);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+}
+
+.details_data {
+  width: 90vw;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #000;
+  padding: 30px;
+  border-radius: 30px;
+}
+
+.close_details {
+  position: absolute;
+  right: 30px;
+  top: 10px;
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  color: black;
+  cursor: pointer;
+}

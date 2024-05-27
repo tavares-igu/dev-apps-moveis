@@ -5,8 +5,11 @@
   padding: 0;
   position: fixed;
   bottom: 0px;
+  z-index: 999;
 }
 
 .warning p {
   margin: 0;
+  text-align: center;
+  cursor: pointer;
 }

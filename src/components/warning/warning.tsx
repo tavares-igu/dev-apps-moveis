@@ -1,12 +1,17 @@
+import { useState } from "react";
 import "./warning.css";
 
 export function Warning(): JSX.Element {
-  return (
-    <div className="warning">
-      <p>
-        Atenção! Por ser acadêmico, este projeto utiliza LocalStorage, e não
-        possui implementação de banco de dados ou autenticação de usuários.
-      </p>
-    </div>
-  );
+  const [isOpen, setIsOpen] = useState(true);
+  if (isOpen)
+    return (
+      <div className="warning">
+        <p onClick={() => setIsOpen(false)}>
+          Attention! As it is academic, this project uses LocalStorage, not
+          having database implementation or user authentication. Click the
+          warning to close it.
+        </p>
+      </div>
+    );
+  return <></>;
 }

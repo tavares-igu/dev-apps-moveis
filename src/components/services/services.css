@@ -1,0 +1,36 @@
+.services_container {
+  max-width: 90vw;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #000;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.services_row {
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid black;
+}
+
+.services_row * {
+  margin-left: 15px;
+  width: 30vw;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.services_row:last-child {
+  border-radius: 0 0 20px 20px;
+}
+
+.service_data {
+  background: #2b2b2b;
+}
+
+.action_logo {
+  width: 20px;
+  cursor: pointer;
+}
