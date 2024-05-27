@@ -1,11 +1,13 @@
 import { Outlet } from "react-router-dom";
-import { NavigationBar } from "../components";
+import { NavigationBar, Warning } from "../components";
 
 function Layout(): JSX.Element {
+  if (window.location.pathname === "/") window.location.href = "/home";
+
   return (
     <>
       <NavigationBar />
-
+      <Warning />
       <Outlet />
     </>
   );

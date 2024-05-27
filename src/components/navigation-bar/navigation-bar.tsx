@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import "./navigation-bar.css";
 
 export function NavigationBar(): JSX.Element {
   return (
