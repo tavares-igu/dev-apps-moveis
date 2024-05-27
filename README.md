@@ -1,30 +1,30 @@
-# React + TypeScript + Vite
+# Trabalho APS de Desenvolvimento de Aplicativos móveis
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aluno: Igor Tavares
 
-Currently, two official plugins are available:
+Orientador: Sérgio Monteiro
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Descrição do trabalho
 
-## Expanding the ESLint configuration
+Este trabalho consiste na criação de um aplicativo web em React para gerenciar uma lista de serviços. O
+aplicativo permite que os usuários cadastrem novos serviços, consultem a lista de serviços existentes,
+editem as informações de serviços cadastrados e excluam serviços da lista.
+Funcionalidades:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+1. Cadastro de Serviços:
 
-- Configure the top-level `parserOptions` property like this:
+- Os usuários podem adicionar novos serviços fornecendo um nome e uma descrição.
+- Um formulário de entrada permite que os usuários insiram os detalhes do serviço desejado.
+- Quando um novo serviço é cadastrado, ele é adicionado à lista de serviços existente.
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+2. Consulta de Serviços:
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- Uma lista de serviços cadastrados é exibida na interface do usuário.
+- Cada serviço na lista é exibido com seu nome e descrição.
+- Os usuários podem visualizar todos os serviços cadastrados em um único local.
+
+3. Edição de Serviços:
+
+- Os usuários têm a capacidade de editar as informações de um serviço existente.
+- Ao clicar no botão "Editar" ao lado de um serviço na lista, os campos de entrada são preenchidos com
+  as informações desse serviço.
